@@ -1,0 +1,117 @@
+{
+    "skills": [
+      {
+        "id": "1",
+        "src": "./img/frontend.png",
+        "title": "Front-End",
+        "description": " i have a +1 proven exprience in creating visually appealing, user-friendly, and responsive front end components."
+      },
+      {
+        "id": "2",
+        "src": "./img/backend.png",
+        "title": "Back-End",
+        "description": " Usually as a PERN or MERN stack web dev in build database. On use of different framework like sequelize too."
+      },
+      {
+        "id": "3",
+        "src": "./img/electronics.png",
+        "title": "Electronics",
+        "description": "Not only electronic circuit designs and analysis but also the use of various sensors to solve real world problems"
+      },
+      {
+        "id": "4",
+        "src": "./img/telecommunication.png",
+        "title": "Telecommunication",
+        "description": "Beside from signal analsyis and testing, but also ensurance of better and secure communication even for long distance."
+      }
+    ],
+    "portfolio": [
+      {
+        "id": "1",
+        "src": "./img/employee.png",
+        "title": "Employee Management system",
+        "description": "A PERN stack web app built just to keep business employee inforations in a secure way. You can create update, delete the entire company or  the user(s) inside the company.",
+        "github": "https://github.com/NIYIKIZA20/Employee-management",
+        "link": "https://niyikiza-ems.onrender.com/"
+      },
+      {
+        "id": "2",
+        "src": "./img/country.png",
+        "title": "Country web App",
+        "description": "A simple Javascript web app, you can view any country in the world, access its location and population too. in future, you'll be also be able to access its google location.",
+        "github": "https://github.com/NIYIKIZA20/country",
+        "link": "https://niyikiza20.github.io/country/"
+      },
+      {
+        "id": "3",
+        "src": "./img/landing.png",
+        "title": "Landing page",
+        "description": " a simple HTML landing page built from a textual photo that i have got from a friend. a simple landing page with acurate fonts and sizing as the original.",
+        "github": "https://github.com/NIYIKIZA20/landing-page",
+        "link": "https://niyikiza20.github.io/landing-page/"
+      }
+    ],
+    "testimonial": [
+      {
+        "id": "1",
+        "count": "4",
+        "src": "./img/image1.png",
+        "description": "A skilled junior developer; built a free portifolio for me in a few days. He's a great choice to work with.",
+        "author_name": "Gasana Samuel",
+        "author_designation": "Rwanda"
+      },
+      {
+        "id": "2",
+        "count": "4",
+        "src": "./img/image2.png",
+        "description": "A man who respect the work, best quality work on the right time. He's also a trust worth person though.",
+        "author_name": "Christian Mpanga ",
+        "author_designation": "Rwanda"
+      },
+      {
+        "id": "3",
+        "count": "5",
+        "src": "./img/image3.png",
+        "description": "a productive, creative and innovative guy that i have ever seen. He' is the best in all.",
+        "author_name": "Mbabazi Charles",
+        "author_designation": "Kigali-Rwanda"
+      }
+    ],
+    "frontend": [
+    {"id":1,"name": "HTML","specs":"Experienced"}, 
+    {"id":2,"name": "CSS","specs":"Experienced"},
+    {"id":3,"name": "Javascript","specs":"Experienced"},
+    {"id":4,"name": "React","specs":"Experienced"},
+    {"id":5,"name": "Bootstrap","specs":"Experienced"},
+    {"id":6,"name": "Tailwind","specs":"Intermediate"},
+    {"id":7,"name": "Next.js","specs":"Intermediate"},
+    {"id":8,"name": "vue","specs":"Intermediate"},
+    {"id":9, "name":"Figma designs", "specs":"Intermediate"},
+    {"id":10, "name":"Nodejs", "specs":"Experienced"},
+    {"id":11, "name":"Postgres", "specs":"Experienced"},
+    {"id":12, "name":"MongoDB", "specs":"Intermediate"},
+    {"id":13, "name":"Express", "specs":"Experienced"},
+    {"id":14, "name":"Sequelize", "specs":"Intermediate"},
+    {"id":15, "name":"Git", "specs":"Experienced"}
+
+     ],
+     "Electronics":[
+      {"id":"1", "name":"Analog circiut design", "specs":"Experienced"},
+      {"id":"2", "name":"Digital circuit design ", "specs":"Experienced"},
+      {"id":"3", "name":"Microcontroler programming", "specs":"Experienced"},
+      {"id":"4", "name":"PCB designs", "specs":"Experienced"},
+      {"id":"5", "name":"signal Processing", "specs":"Experienced"},
+      {"id":"6", "name":"Power electronics", "specs":"Experienced"},
+      {"id":"7", "name":"testing and debuging", "specs":"Experienced"},
+      {"id":"8", "name":"Simulation tools", "specs":"Experienced"},
+      {"id":"9", "name":"CAD computer aided designs", "specs":"Intermediate"},
+      {"id":"10", "name":"Project management", "specs":"Experienced"},
+      {"id":"11", "name":"Electronic components knowledge", "specs":"Experienced"},
+      {"id":"12", "name":"Telecommunication Systems Design", "specs":"Intermediate"},
+      {"id":"13", "name":"Network Protocols", "specs":"Intermediate"},
+      {"id":"14", "name":"Fiber optics", "specs":"Intermediate"},
+      {"id":"15", "name":"Satellite Communication", "specs":"Intermediate"},
+      {"id":"16", "name":"Digital Signal Processing", "specs":"Intermediate"}
+    ]
+
+  }
