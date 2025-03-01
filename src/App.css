@@ -5,7 +5,8 @@ body {
     -webkit-font-smoothing: "Roboto", sans-serif;
     -moz-osx-font-smoothing: "Roboto", sans-serif;
     font-style: normal;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.0);
+    
   }
   h1,h2,h3,h4,h5,h6,p {
     margin: 0;
@@ -217,7 +218,7 @@ body {
   .heroSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 100px 85px 10px;
+    /* padding: 100px 85px 10px; */
     align-items: center;
     justify-content: space-between;
     gap: 32px;
@@ -259,7 +260,8 @@ body {
   .heroSectionImg > img {
     width: 100%;
     height: auto;
-    border-radius: 50% 50%;
+    padding:20px;
+    /* border-radius: 50% 50%; */
     background-color: var(--hero);
     box-shadow: 1px 1px 1px 1px #dcffdf; 
           
@@ -828,8 +830,20 @@ body {
     border-radius: 0.625rem;
     transition: all ease-in-out 0.2s;
   }
+  @media screen and (min-width: 1200px) {
+    body {
+      margin: 0% 10%;
+      /* background-color: rgb(20,20, 20); */
+    }
+  }
   
   @media screen and (max-width: 1200px) {
+    body {
+      width: 80%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
     .navHumburger {
       display: flex;
       z-index: 200;
