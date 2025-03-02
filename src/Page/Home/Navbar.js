@@ -28,6 +28,11 @@ function Navbar() {
     };
   }, []);
 
+  const openFile = () => {
+    const fileUrl = 'https://drive.google.com/file/d/13QtNITpx-66fdZ5unZp0OFrv1YKC22TE/view?usp=drive_link';
+    window.open(fileUrl, '_blank');
+  }
+
   useEffect(() => {
     if (window.innerWidth <= 1200) {
       closeMenu();
@@ -119,6 +124,9 @@ function Navbar() {
       >
         Contact Me
       </Link>
+      <div>
+      <button className="btn btn-success"  onClick={openFile}> View CV</button>
+      </div>
       <div className="dark" onClick={toggleDark}>
         <img src='./img/lightIcon.png' />
       </div>
