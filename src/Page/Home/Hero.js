@@ -22,12 +22,10 @@ export default function Hero() {
 
       {/* Text Content */}
       <div className="text-content">
-        <h2>Hello, I am <span className="myName">Jean Baptiste N.</span> </h2>
-        <h2><span>A Full Stack </span>Web Developer</h2>
+        <h2>Hello, I am <span className="myName">Jean Baptiste N.</span></h2>
+        <h2>A <span> Full Stack</span> Web Developer</h2>
       </div>
-      <div>
-        <button className="btn btn-primary" onClick={scrollToContact}>Get In Touch</button>
-      </div>
+      <button className="btn btn-primary get-in-touch-btn" onClick={scrollToContact}>Get In Touch</button>
     </section>
   );
 }
