@@ -120,15 +120,15 @@ function Navbar() {
         offset={-70}
         duration={500}
         to="Contact"
-        className="btn btn-outline-primary"
+        className="navbarContent "
       >
         Contact Me
       </Link>
       <div>
-      <button className="btn btn-success"  onClick={openFile}> View CV</button>
+      <button className="btn btn-success"  onClick={openFile}> Download CV</button>
       </div>
       <div className="dark" onClick={toggleDark}>
-        <img src='./img/lightIcon.png' />
+        <img src='./img/dark.png' />
       </div>
     </nav>
   );

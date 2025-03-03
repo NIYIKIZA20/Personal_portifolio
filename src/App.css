@@ -1,11 +1,13 @@
                                               /* Global css styles*/
 body {
     margin: 0;
+    max-width: 1400px;
+    max-height: 900px;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: "Roboto", sans-serif;
     -moz-osx-font-smoothing: "Roboto", sans-serif;
     font-style: normal;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     
   }
   :root {
@@ -17,9 +19,7 @@ body {
     --black: hwb(0 0% 100%);
     --body-color:rgba(0,0,0,.98);
     --white: #ffffff;
-    --hero: rgb(150,180, 150);
     --divider : rgba(40, 41, 56, 0.6);
-    --myname-color: #ff5733;     /* Add a new color for .myName */
     }
   body.dark {
     --primary: #281e4e;
@@ -29,9 +29,9 @@ body {
     --darkblue: #ffffff;
     --black: #ffffff;
     --white: hwb(0 0% 1002%);
-    --hero: rgb(20,20, 20);
     --divider : rgba(200, 200,195,0.6);
-  } 
+  }          
+         /*button styles*/
   .btn {
     font-family: "Roboto";
     display: inline-block;
@@ -77,91 +77,20 @@ body {
     color: var(--darkblue);
     background-color: var(--white);
   }
-
-  /* Main Headings */
-  
-  /* Heading 1 */
-  h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 67px;
-  }
-  /* Heading 2 */
-  h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-  }
-  /* Heading 3 */
-  h2 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
-  }
-  
-  /* Pragraphs text large medium small */
-  /* Body 1 */
-  .contactMe {
-    color: var(--darkblue);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-  }
-  /* Body 2 */
-  .textName {
-    color: var(--darkblue);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 24px;
-  }
-  
-  /* Body 3 */
-  .textTerms {
-    color: var(--black);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-  }
-  .textTerms:hover {
-    color: var(--github);
-  }
-  
-  /* Section Titles */
-  /* Skills & About Me */
-  .sectionTitle {
-    color: var(--heading-color);
-    font-size: 21px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    display: flex;
-    align-items: flex-start;
-  }
-          /* Portfolio, Testimonial & Contact Me */
-  .sub--title {
-    color: var(--heading-color);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-  }
-  
-                                          /* Navbar Style Start */
+                                         /* Navbar Style */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 40px;
     padding: 15px 85px;
-    background: var(--white);
-    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+    background: var(--bg-shade);
     position: fixed;
+    max-width: 1400px;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; 
+    z-index: 1000;     
   }
   
   .navbarItems > ul {
@@ -609,7 +538,7 @@ body {
   select::-ms-expand {
     display: none;
   }
- 
+                                               /*footer styles*/
   .footerContainer {
     display: flex;
     padding: 106px 85px;
@@ -676,16 +605,31 @@ body {
     color: var(--heading-color);
     font-weight: bold;
   }
-    @media only screen and (max-width: 1800px) {
-    .herosectionTitle {
-      font-size: 68px;
-      line-height: 70px;
-    }
-    .skillsSectionCardTitle {
-      font-size: 28px;
-      line-height: 40px;
-    }
+  .contactMe {
+    color: var(--darkblue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
   }
+  .textName {
+    color: var(--darkblue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+  }
+  .textTerms {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  .textTerms:hover {
+    color: var(--github);
+  }
+    /*  */
   
   @media only screen and (max-width: 1600px) {
     .skillsSectionContainer {
