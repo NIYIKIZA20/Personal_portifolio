@@ -1,11 +1,11 @@
-/* Global css styles*/
+                                              /* Global css styles*/
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: "Roboto", sans-serif;
     -moz-osx-font-smoothing: "Roboto", sans-serif;
     font-style: normal;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: var(--body-color);
     
   }
   :root {
@@ -15,10 +15,11 @@ body {
     --github: #e62872;
     --darkblue: #1c1e53;
     --black: hwb(0 0% 100%);
+    --body-color:rgba(0,0,0,.98);
     --white: #ffffff;
     --hero: rgb(150,180, 150);
     --divider : rgba(40, 41, 56, 0.6);
-    --myname-color: #ff5733; /* Add a new color for .myName */
+    --myname-color: #ff5733;     /* Add a new color for .myName */
     }
   body.dark {
     --primary: #281e4e;
@@ -37,8 +38,6 @@ body {
     padding: 10px 10px;
     font-size: 14px;
     font-style: normal;
-    /* font-weight: 400; */
-    /* line-height: 24px; */
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -53,19 +52,11 @@ body {
     -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
   }
-  .btn-outline-primary {
-    color: var(--primary);
-    background-color: var(--white);
-    border: 1px solid var(--primary);
-  }
-  .btn-outline-primary:hover {
-    color: var(--white);
-    background-color: var(--primary);
-  }
   .btn-primary {
     color: var(--white);
     background-color: var(--primary);
     border: 1px solid var(--primary);
+    
   }
   .btn-primary:hover {
     color: var(--primary);
@@ -150,16 +141,15 @@ body {
     display: flex;
     align-items: flex-start;
   }
-  /* Portfolio, Testimonial & Contact Me */
+          /* Portfolio, Testimonial & Contact Me */
   .sub--title {
     color: var(--heading-color);
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
   }
-  /* Section Titles Ends */
   
-  /* Navbar Style Start */
+                                          /* Navbar Style Start */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -189,7 +179,7 @@ body {
     width: 80px;
     border-radius: 10px;
   }
-  /* Navbar Content */
+                                 
   .navbarContent {
     color: var(--darkblue);
     font-size: 16px;
@@ -203,10 +193,7 @@ body {
   }
   .navbarActiveContent {
     color: var(--primary);
-  }
-
-  
-                                  /* Hero Section Style */
+  }                              /* Hero Section Style */
   .text-content {
     position: absolute;
     z-index: 2;
@@ -223,7 +210,7 @@ body {
   
   
   .myName {
-    color: var(--myname-color);
+    color: var(--primary);
     font-stretch: condensed;
     font-family:Verdana, Geneva, Tahoma, sans-serif
   }
@@ -231,6 +218,7 @@ body {
   .welcome-section {
     position: relative;
     width: 100%;
+    margin: 0px;
     height: calc(100vh - 60px); 
     display: flex;
     align-items: flex-start; 
@@ -263,35 +251,14 @@ body {
   .text-content h2 {
     margin-top: 10px;
   }
-  
-  .text-content .btn {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-  }
-  
   .get-in-touch-btn {
     position: absolute;
     bottom: 10%;
     left: 10%;
-}
-
-
-  .heroSection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* padding: 100px 85px 10px; */
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    background-color: var(--bg-shade);
-    
+    cursor: pointer;
+    z-index: 2; /* Ensure the button is above the video */
   }
-
-
-  /* Hero Section Style Ends */
-  
-  /* Skills Section Style */
+                                      /* Skills Section Style */
   .skillsSection {
     display: flex;
     padding: 0px 85px;
@@ -741,9 +708,6 @@ body {
   }
   
   @media only screen and (max-width: 1200px) {
-    .btn-outline-primary {
-      display: none;
-    }
     .heroSection {
       display: flex;
       flex-direction: column-reverse;
