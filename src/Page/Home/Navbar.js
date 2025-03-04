@@ -3,14 +3,16 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleNav = () => {
     setNavActive(!navActive);
   };
- 
-  const toggleDark = () =>{
+
+  const toggleDark = () => {
     document.body.classList.toggle('dark');
-  }
+    setDarkMode(!darkMode);
+  };
 
   const closeMenu = () => {
     setNavActive(false);
@@ -31,7 +33,7 @@ function Navbar() {
   const openFile = () => {
     const fileUrl = 'https://drive.google.com/file/d/13QtNITpx-66fdZ5unZp0OFrv1YKC22TE/view?usp=drive_link';
     window.open(fileUrl, '_blank');
-  }
+  };
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
@@ -43,6 +45,10 @@ function Navbar() {
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="myNavbar">
         <img src="./img/logo.png" alt="Logo" />
+      </div>
+      <div className="dark" onClick={toggleDark}>
+        <img src='./img/dark.png' alt="dark mode icon" style={{ display: darkMode ? 'none' : 'block' }} />
+        <img src='./img/light.png' alt="light mode icon" style={{ display: darkMode ? 'block' : 'none' }} />
       </div>
       <a 
         className={`navHumburger ${navActive ? "active" : ""}`}
@@ -69,7 +75,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-          <Link
+            <Link
               onClick={closeMenu}
               activeClass="navbarActiveContent"
               spy={true}
@@ -125,10 +131,10 @@ function Navbar() {
         Contact Me
       </Link>
       <div>
-      <button className="btn btn-success"  onClick={openFile}> Download CV</button>
+        <button className="btn btn-success" onClick={openFile}>Download CV</button>
       </div>
-      <div className="dark" onClick={toggleDark}>
-        <img src='./img/dark.png' />
+      <div className="myName">
+        <img src='./img/profile.jpg' alt="Profile" />
       </div>
     </nav>
   );
