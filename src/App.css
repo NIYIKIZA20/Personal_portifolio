@@ -42,15 +42,7 @@ body.dark {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 4px; 
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -ms-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
+  border-radius: 4px;
   transition: background-color 0.5s;
 }
 .btn-primary {
@@ -757,65 +749,14 @@ select {
       margin: 0% 10%;
       /* background-color: rgb(20,20, 20); */
     }
-  }
-  
-  @media screen and (max-width: 1200px) {
-    body {
-      width: 80%;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .navHumburger {
-      display: flex;
-      z-index: 200;
-    }
-    .navbarItems {
-      display: flex;
-    }
-    .navbarItems {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255);
-      top: -20rem;
-      left: 0;
-      width: 100%;
-      transition: all ease-in-out 0.4s;
-    }
-    .navbarItems ul {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 3rem 0 0.6rem;
-      z-index: -100;
-    }
-    .navbarItems ul li {
-      text-align: center;
-    }
-    .navbarItems ul li a {
-      padding: 0.5rem;
-    }
-    .navbarItems {
-      z-index: -1000;
-    }
-    .navbarItems.active {
-      top: 30px;
-    }
-    .navHumburger.active :nth-child(1) {
-      transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-    }
-  
-    .navHumburger.active :nth-child(2) {
-      opacity: 0;
-    }
-  
-    .navHumburger.active :nth-child(3) {
-      transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+    .heroSection {
+      margin: 0% 0% !important;
+      
     }
   }
-  @media screen and (max-width: 600px) {
+  
+  
+  @media screen and (max-width: 800px) {
     .navHumburger {
       display: flex;
       z-index: 200;
