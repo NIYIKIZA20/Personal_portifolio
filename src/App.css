@@ -744,14 +744,17 @@ select {
     }
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     body {
       margin: 0% 10%;
-      /* background-color: rgb(20,20, 20); */
     }
-    .heroSection {
-      margin: 0% 0% !important;
-      
+    .welcome-section {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      margin: 0; 
+      padding: 0;
+      overflow: hidden; 
     }
   }
   
