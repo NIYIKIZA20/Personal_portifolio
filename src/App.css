@@ -70,6 +70,13 @@ body.dark {
   color: var(--darkblue);
   background-color: var(--white);
 }
+.portfolioSection, .aboutSection {
+  position: relative;
+  margin: 0 10%;
+  height: calc(100vh - 60px); 
+  overflow: hidden;
+
+}
                                        /* Navbar Style */
 .navbar {
   display: flex;
@@ -744,19 +751,12 @@ select {
     }
   }
   
-  @media screen and (max-width: 1200px) {
-    body {
+   @media screen and (min-width: 1200px) {
+    .portfolioSection .aboutSection {
       margin: 0% 10%;
     }
-    .welcome-section {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      margin: 0; 
-      padding: 0;
-      overflow: hidden; 
-    }
-  }
+    
+  } 
   
   
   @media screen and (max-width: 800px) {
