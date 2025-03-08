@@ -70,7 +70,7 @@ body.dark {
   color: var(--darkblue);
   background-color: var(--white);
 }
-.portfolioSection, .aboutSection {
+.portfolioSection, .profile-container {  /* global section margin*/
   position: relative;
   margin: 0 10%;
   height: calc(100vh - 60px); 
@@ -91,7 +91,7 @@ body.dark {
   left: 0;
   right: 0;
   z-index: 1000;
-  gap: 15px; /* Added gap between navbar items */
+  gap: 15px; 
 }
 .myNavbar {
   margin-right: auto;
@@ -100,25 +100,25 @@ body.dark {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 15px; /* Added gap between navbar items */
+  gap: 15px; 
   text-decoration: none;
 }
 .navbarItems ul > li > a {
   text-decoration: none;
 }
 .myNavbar > img {
-  height: 20px; /* Set height to 20px */
-  width: 20px; /* Set width to 20px */
+  height: 20px; 
+  width: 20px; 
   border-radius: 10px;
 }
 .dark > img {
-  height: 20px; /* Set height to 20px */
-  width: 20px; /* Set width to 20px */
+  height: 20px; 
+  width: 20px; 
   cursor: pointer;
 } 
 .myName > img {
-  height: 20px; /* Set height to 20px */
-  width: 20px; /* Set width to 20px */
+  height: 20px; 
+  width: 20px; 
   border-radius: 50%;
 }                            
 .navbarContent {
@@ -135,7 +135,7 @@ body.dark {
 .navbarActiveContent {
   color: var(--primary);
 }
-        /* NavHumburger styles*/
+                  /* NavHumburger styles*/
 .navHumburger {        
   display: none;
   width: 1.875rem;
@@ -163,20 +163,15 @@ body.dark {
   left: 10%;
   font-weight: 400; 
 }
-
-
 .text-content span {
   font-weight:bolder;
   font-size: 1.2em;
 }
-
-
 .myName {
   color: var(--primary);
   font-stretch: condensed;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .welcome-section {
   position: relative;
   width: 100%;
@@ -189,7 +184,6 @@ body.dark {
   text-align: left;
   margin-top: 60px; 
 }
-
 .background-video {
   position: absolute;
   top: 0;
@@ -199,7 +193,6 @@ body.dark {
   object-fit: cover;
   z-index: 0;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -218,7 +211,77 @@ body.dark {
   bottom: 10%;
   left: 10%;
   cursor: pointer;
-  z-index: 2; /* Ensure the button is above the video */
+  z-index: 2; 
+}
+
+                                  /* Profile/ about section styles */
+.profile-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.profile-title {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+}
+
+.profile-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: unset;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section,
+.details-section {
+  max-width: 400px;
+  text-align: left;
+}
+
+.profile-image-container {
+  border: 4px solid #ff4081;
+  border-radius: 50%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.follow-button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  background-color: #0d8bf0;
 }
                                     /* Skills Section Style */
 .skillsSection {
@@ -351,22 +414,7 @@ body.dark {
 /* Skills Style Ends */
 
 /* About Us */
-.aboutSection {
-  display: grid;
-  padding: 55px 85px;
-  align-items: center;
-  gap: 64px;
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 150px 2px 150px 2px rgba(0, 0, 0, 0.65);
-  background-color: #00000043;
-}
 
-.aboutSectionImg > img {
-  padding-top: 0px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50% 50%;
-}
 /* About Us Ends */
 
 /* My Portfolio Starts */
@@ -691,7 +739,6 @@ select {
       text-align: center;
     }
     .skillsSectionContainer,
-    .aboutSection,
     .portfolioSectionContainer,
     .portfolioContainer-box,
     .footerLinkContainer,
@@ -716,11 +763,6 @@ select {
       gap: 20px;
       padding-top: 70px;
       padding-bottom: 70px;
-    }
-    .aboutSection {
-      gap: 20px;
-      padding-top: 0;
-      padding-bottom: 0;
     }
     .testimonialDivSectionCard {
       padding: 25px;
@@ -750,15 +792,15 @@ select {
       margin: 20px;
     }
   }
-  
-   @media screen and (min-width: 1200px) {
-    .portfolioSection .aboutSection {
-      margin: 0% 10%;
+
+  @media (min-width: 768px) {
+    .profile-content {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
     }
-    
-  } 
-  
-  
+  }
+ 
   @media screen and (max-width: 800px) {
     .navHumburger {
       display: flex;

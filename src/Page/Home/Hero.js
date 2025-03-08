@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="welcome-section heroSection" id="heroSection">
+  <section className="welcome-section heroSection" id="heroSection">
       <video className="background-video" autoPlay loop muted>
         <source src="./img/video.mp4" type="video/mp4" />
         <source src="./img/video.webm" type="video/webm" />

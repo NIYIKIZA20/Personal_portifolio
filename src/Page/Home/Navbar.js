@@ -47,8 +47,8 @@ function Navbar() {
         <img src="./img/logo.png" alt="Logo" />
       </div>
       <div onClick={toggleDark}>
-        <img src='./img/light.png' alt="light mode icon" style={{ display: darkMode ? 'none' : 'block' }} />
-        <img src='./img/dark.png' alt="dark mode icon" className={darkMode ? 'dark' : ''} style={{ display: darkMode ? 'block' : 'none' }} />
+        <img src='./img/dark.png' alt="light mode icon" style={{ display: darkMode ? 'none' : 'block' }} />
+        <img src='./img/light.png' alt="dark mode icon" className={darkMode ? 'dark' : ''} style={{ display: darkMode ? 'block' : 'none' }} />
       </div>
       <a 
         className={`navHumburger ${navActive ? "active" : ""}`}
