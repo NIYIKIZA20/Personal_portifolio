@@ -6,7 +6,7 @@ export default function AboutMe() {
         <p className="profile-subtitle">I'm a web developer with +3 expertise in front-end and back-end technologies</p>
 
         <div className="profile-content">
-          <div className="about-section">
+          <div className="about-section about-section-div">
             <h2>About me</h2>
             <p>
             I am a full stack web developer with over 3+ years of experience in both front-end and back-end development. 
@@ -17,11 +17,11 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className="profile-image-container">
+          <div className="profile-image-container about-section-div">
             <img src="./img/profile.jpg" alt="Profile" className="profile-image" />
           </div>
 
-          <div className="details-section">
+          <div className="details-section about-section-div">
             <h2>Details</h2>
             <p>
               <strong>Name:</strong> Jean Baptiste Niyikiza

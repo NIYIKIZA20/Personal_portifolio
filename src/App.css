@@ -70,14 +70,7 @@ body.dark {
   color: var(--darkblue);
   background-color: var(--white);
 }
-.portfolioSection, .profile-container {  /* global section margin*/
-  position: relative;
-  margin: 0 10%;
-  height: calc(100vh - 60px); 
-  overflow: hidden;
-
-}
-                                       /* Navbar Style */
+                                      /* Navbar Style */
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -213,25 +206,25 @@ body.dark {
   cursor: pointer;
   z-index: 2; 
 }
-
                                   /* Profile/ about section styles */
 .profile-container {
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
+  overflow-x: hidden;
+  
 }
-
 .profile-title {
   font-size: 2.5rem;
   color: #6a1b9a;
 }
-
 .profile-subtitle {
+  display: flex;
+  flex-wrap: wrap;;
   font-size: 1.2rem;
   color: #666;
   margin-bottom: 20px;
 }
-
 .profile-content {
   display: flex;
   flex-direction: column;
@@ -244,27 +237,27 @@ body.dark {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.about-section p {
+  color: #666;
+  font-size: 1rem;
+}
 .about-section,
 .details-section {
-  max-width: 400px;
+  max-width: 25%;
   text-align: left;
 }
-
 .profile-image-container {
-  border: 4px solid #ff4081;
+  border: 3px solid #6a1b9a;
   border-radius: 50%;
   padding: 5px;
   overflow: hidden;
 }
-
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .contact-info {
   display: flex;
   align-items: center;
@@ -793,15 +786,25 @@ select {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     .profile-content {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
     }
+    .portfolioSection, .profile-container {  /* global section margin*/
+      position: relative;
+      margin: 0 10%;
+      height: calc(100vh - 60px); 
+      overflow: hidden;
+    }
+    /* .about-section-div {
+      max-width: 500px;
+    } */
   }
  
   @media screen and (max-width: 800px) {
+    
     .navHumburger {
       display: flex;
       z-index: 200;
