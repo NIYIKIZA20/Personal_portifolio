@@ -744,8 +744,7 @@ select {
     }
     .skillsSection,
     .portfolioContainer,
-    .heroSectionContent,
-    .heroSectionDivContent {
+    .heroSectionContent {
       align-items: center;
     }
     .portfolioContainer-box {
@@ -766,9 +765,6 @@ select {
     .sectionsHeading {
       font-size: 35px;
       line-height: 40px;
-    }
-    .heroSectionDivContent {
-      gap: 10px;
     }
     .contactFormContainer {
       width: 90%;

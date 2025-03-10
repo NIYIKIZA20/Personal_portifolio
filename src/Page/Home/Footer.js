@@ -30,7 +30,7 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="heroSectionDivContent"
+                to="profile-content"
                 className="textName"
               >
                 Portfolio
