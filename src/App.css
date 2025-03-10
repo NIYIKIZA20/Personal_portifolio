@@ -160,7 +160,15 @@ body.dark {
   font-weight:bolder;
   font-size: 1.2em;
 }
+.text-content h3 {
+  opacity: .8;
+}
+.text-content h4 {
+  opacity:0.82;
+}
 .myName {
+  font-weight: bolder;
+  font-size: 1.8rem;
   color: var(--primary);
   font-stretch: condensed;
   font-family:Verdana, Geneva, Tahoma, sans-serif;

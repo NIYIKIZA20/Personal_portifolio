@@ -17,7 +17,8 @@ export default function Hero() {
       </video>
       <div className="overlay"></div>
       <div className="text-content">
-        <h2>Hello, I am <span className="myName">Jean Baptiste N.</span></h2>
+        <h3 > Hello, my name is </h3>
+        <h1 className="myName">Jean Baptiste N.</h1>
         <h2>A <span> Full Stack</span> Web Developer</h2>
       </div>
       <button className="btn btn-primary get-in-touch-btn" onClick={scrollToContact}>Get In Touch</button>
