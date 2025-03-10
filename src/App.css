@@ -243,7 +243,7 @@ body.dark {
 }
 .about-section,
 .details-section {
-  max-width: 25%;
+  max-width: 300px;
   text-align: left;
 }
 .profile-image-container {
@@ -263,7 +263,9 @@ body.dark {
   align-items: center;
   gap: 10px;
 }
-
+.contact-email {
+  color: #1da1f2 ;
+}
 .follow-button {
   background-color: #1da1f2;
   color: white;
@@ -798,9 +800,10 @@ select {
       height: calc(100vh - 60px); 
       overflow: hidden;
     }
-    /* .about-section-div {
-      max-width: 500px;
-    } */
+    .about-section {
+      width: 80%;
+      text-align: center;
+    }
   }
  
   @media screen and (max-width: 800px) {

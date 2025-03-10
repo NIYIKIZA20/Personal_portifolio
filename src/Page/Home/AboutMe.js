@@ -27,13 +27,13 @@ export default function AboutMe() {
               <strong>Name:</strong> Jean Baptiste Niyikiza
             </p>
             <p>
-              <strong>Age:</strong> 25 years
+              <strong>Email:</strong> <span className="contact-email">jbniyikiza20@gmail.com</span> 
             </p>
             <p>
               <strong>Location:</strong> Kigali, Rwanda
             </p>
             <p className="contact-info">
-              📞 +2507890992847 <button className="follow-button">Follow</button>
+              📞 +250789092847 <button className="follow-button">Follow</button>
             </p>
           </div>
         </div>
