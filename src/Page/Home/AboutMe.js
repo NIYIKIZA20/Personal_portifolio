@@ -1,4 +1,9 @@
 export default function AboutMe() {
+
+  const handleFollow = () => {
+    const fileUrl = "https://www.linkedin.com/in/niyikiza-jean-baptiste/";
+    window.open(fileUrl, '_blank');
+  }
     return (
 
       <div className="profile-container" id="AboutMe">
@@ -33,7 +38,7 @@ export default function AboutMe() {
               <strong>Location:</strong> Kigali, Rwanda
             </p>
             <p className="contact-info">
-              📞 +250789092847 <button className="follow-button">Follow</button>
+              📞 +250789092847 <button className="follow-button" onClick={handleFollow}>Follow</button>
             </p>
           </div>
         </div>
