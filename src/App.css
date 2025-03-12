@@ -100,18 +100,18 @@ body.dark {
   text-decoration: none;
 }
 .myNavbar > img {
-  height: 20px; 
-  width: 20px; 
-  border-radius: 10px;
+  height: 40px; 
+  width: 40px; 
+  border-radius: 20px;
 }
 .dark > img {
-  height: 20px; 
-  width: 20px; 
+  height: 15px; 
+  width: 15px; 
   cursor: pointer;
 } 
 .myName > img {
-  height: 20px; 
-  width: 20px; 
+  height: 30px; 
+  width: 30px; 
   border-radius: 50%;
 }                            
 .navbarContent {
@@ -127,6 +127,10 @@ body.dark {
 }
 .navbarActiveContent {
   color: var(--primary);
+}
+.download-cv {
+  padding: 4px 8px;
+  border-radius: 20px;
 }
                   /* NavHumburger styles*/
 .navHumburger {        

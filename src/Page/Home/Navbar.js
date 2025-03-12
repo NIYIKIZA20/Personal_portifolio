@@ -131,7 +131,7 @@ function Navbar() {
         Contact Me
       </Link>
       <div>
-        <button className="btn btn-success" onClick={openFile}>Download CV</button>
+        <button className="btn btn-primary download-cv" onClick={openFile}>Download CV</button>
       </div>
       <div className="myName">
         <img src='./img/profile.jpg' alt="Profile" />

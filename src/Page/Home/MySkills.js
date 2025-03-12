@@ -9,8 +9,6 @@ const MySkills = () => {
       </div>
       <div className="skillsSectionContainer">
         {data?.skills?.map((item, index) => (
-          
-          
             <div className="skillsContainerCard">
             <div key={index} className="skillsSectionCard">
               <div className="skillsSectionImg">
