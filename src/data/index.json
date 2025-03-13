@@ -1,36 +1,35 @@
 {
-    "skills": [
-      {
-        "id": "1",
-        "src": "./img/frontend.png",
-        "title": "Front-End",
-        "description": " i have a +1 proven exprience in creating visually appealing, user-friendly, and responsive front end components."
-      },
-      {
-        "id": "2",
-        "src": "./img/backend.png",
-        "title": "Back-End",
-        "description": " Usually as a PERN or MERN stack web dev in build database. On use of different framework like sequelize too."
-      },
-      {
-        "id": "3",
-        "src": "./img/electronics.png",
-        "title": "Electronics",
-        "description": "Not only electronic circuit designs and analysis but also the use of various sensors to solve real world problems"
-      },
-      {
-        "id": "4",
-        "src": "./img/telecommunication.png",
-        "title": "Telecommunication",
-        "description": "Beside from signal analsyis and testing, but also ensurance of better and secure communication even for long distance."
-      }
-    ],
+    "skillsData" : [
+  {
+    "category": "Front-End Development",
+    "credential": "Andela Certified Front-End Dev",
+    "skills": ["HTML", "CSS", "javascript","React.js", "Next.js", "MUI", "tailwind","bootstrap"],
+    "progress": 95
+  },
+  {
+    "category": "Back-End Development",
+    "credential": "Self taught.",
+    "skills": ["Node", "Express","REST Api","postrgres","Sequelize","GraphQl","JWT Authentication", "mongoDB"],
+    "progress": 90
+  },{
+    "category": "UI/UX Design",
+    "credential": "Andela Certified Front-End Dev",
+    "skills": ["Responsiveness", "visual design","Figma designs","Adobe photoshop", "Canvas" ,"originLab"],
+    "progress": 88
+  },
+  {
+    "category": "Embedded Systems",
+    "credential": "Self taught.",
+    "skills": ["Microcontroller programming", "PCB designs", "CAD design", "Signal analysis & Simulations","IoT solutions," ,"Python", "C & C++"],
+    "progress": 85
+  }
+],
     "portfolio": [
       {
         "id": "1",
         "src": "./img/employee.png",
         "title": "Employee Management system",
-        "description": "A PERN stack web app built just to keep business employee inforations in a secure way. You can create update, delete the entire company or  the user(s) inside the company.",
+        "description": "A PERN stack web app built just to keep business employee information in a secure way. You can create update, delete the entire company or  the user(s) inside the company.",
         "github": "https://github.com/NIYIKIZA20/Employee-management",
         "link": "https://niyikiza-ems.onrender.com/"
       },

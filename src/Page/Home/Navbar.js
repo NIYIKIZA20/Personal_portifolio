@@ -110,10 +110,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="mySkills"
+              to="skillsId"
               className="navbarContent"
             >
-              Experiences
+              Skills
             </Link>
           </li>
         </ul>

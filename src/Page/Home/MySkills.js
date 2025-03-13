@@ -1,47 +1,42 @@
-import data from "../../data/index.json";
+import skillsData from "../../data/index.json";
 
 const MySkills = () => {
   return (
-    <>
-    <section className="skillsSection" id="mySkills">
-      <div className="portfolioContainer">
-        <h2 className="sectionHeading portifolioSectionHeading">My expertise</h2>
-      </div>
-      <div className="skillsSectionContainer">
-        {data?.skills?.map((item, index) => (
-            <div className="skillsContainerCard">
-            <div key={index} className="skillsSectionCard">
-              <div className="skillsSectionImg">
-                <img src={item.src} alt="Product Chain" />
+    <section className="skills-container" id="skillsId">
+      <h1 className="skills-title">Skills</h1>
+      <p className="skills-subtitle">DEVELOPMENT SKILLS</p>
+      
+      <div className="skills-grid">
+        {skillsData.skillsData.map((skill, index) => (
+          <div key={index} className="skill-card">
+            <h2>{skill.category}</h2>
+            {skill.credential && (
+              <a
+              href={skill.credential} 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="credential-link"
+            >
+              Check Out
+            </a>
+            )}
+            <ul>
+              {skill?.skills.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+            <div className="progress-bar">
+              <div
+                className="progress"
+                style={{ width: `${skill.progress}%` }} 
+              >
+                {skill.progress}%
               </div>
-              <div className="skillsSectionCardContent">
-                <h3 className="skillsSectionCardTitle">{item.title}</h3>
-                <p className="skillsSectionCardDescription">{item.description}</p>
-              </div>
-            </div>        
-            </div>        
-                 
+            </div>
+          </div>
         ))}
       </div>
     </section>
-
-    <section className="experiencesContainer">
-      <div  className="experiencesSectionDiv">
-        <div className="experiencesSection">
-          {data?.frontend?.map((item)=>(
-            <div className="skillsContainerCard">
-            <div key={item.id} className="experienceItemDiv">
-              <div className="experienceIconDiv">
-                <img src='./img/icon.png' className="icon"></img>
-                <p className="experiencesMainParagraph">{item.name}</p>
-              </div> 
-            </div> 
-            </div> 
-          ))}     
-        </div>
-     </div>
-    </section>
-  </>
   );
 }
 

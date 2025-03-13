@@ -226,7 +226,7 @@ body.dark {
   overflow-x: hidden;
   
 }
-.profile-title {
+.profile-title, .skills-title {
   font-size: 2.5rem;
   color: #6a1b9a;
 }
@@ -291,140 +291,70 @@ body.dark {
   background-color: #0d8bf0;
 }
                                     /* Skills Section Style */
-.skillsSection {
-  display: flex;
-  padding: 0px 85px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 106px;
-  
+.skills-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
-.skillsSectionHeading {
-  color: var(--heading-color);
-  line-height: 77px;
+.skills-subtitle {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
-.skillsSectionContainer {
+
+.skills-grid {
   display: grid;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 42.6px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.skillsSectionCard {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-  border: 1px solid var(--primary);
-  border-radius: 10.6px;
-  background: var(--bg-shade);
-  min-height: 250px;
-}
-.experiencesContainer {
-  display: flex;
-  padding: 40px 85px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.experiencesSectionDiv {
-  border: 1px  solid var(--primary);
-  border-radius: 15px; 
-  padding: 30px 85px;
-  width: 100%;
- 
-
-}
-.experiencesSectionDiv:hover {
-  border-bottom: 6px solid var(--darkblue);
-}
-
-.experiencesSection {
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: initial;
-  gap: 2rem;
-  justify-content: space-around;
-  flex-direction:row;
-  
-     
-}
-
-.experienceIconDiv {
-  display: flex;
-  margin:10px 18px;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-}
-
-.skillsSectionCard:hover {
-  border: 1.5px solid blue;
-  border-bottom: 4px solid var(--primary); 
-}
-.skillsSectionCard:hover .skillsSectionCardDescription {
-  color: var(--darkblue);
-}
-.skillsSectionImg {
-  display: flex;
-  padding: 13.3px;
-  justify-content: center;
-  align-items: center;
-  gap: 13.3px;
-  border-radius: 10.6px;
+.skill-card {
   background: #fff;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
-.skillsSectionImg >img {
+
+.credential-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.progress-bar {
   width: 100%;
-  height: auto;
-  max-height: 100px;
-
-}
-.skillsSectionCardContent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.skillsSectionCardTitle {
-  color: var(--heading-color);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 45px;
-}
-.skillsSectionCardDescription {
-  color: var(--black);
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-.experienceItemDiv {
-  display: flex;
-  height:max-content;
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
 }
 
-.skillsContainerCard{
-  display: flex;
-  height: 100%;
+.progress {
+  height: 10px;
+  background: #007bff;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+  text-align: right;
+  padding-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
 }
-.sectionHeading {
-  color: var(--heading-color);
-
-}
-/* Skills Style Ends */
-
-/* About Us */
-
-/* About Us Ends */
-
-/* My Portfolio Starts */
+                            /* My Portfolio Starts */
 .portfolioSection {
   display: flex;
   padding: 50px 85px;
@@ -433,18 +363,7 @@ body.dark {
   align-items: flex-start;
   gap: 80px;
 }
-.portfolioContainer-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.portfolioContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.3px;
-}
+
 .portfolioSectionContainer {
   display: flex;
   align-items: center;
@@ -514,10 +433,6 @@ body.dark {
 }  
 .portfolioSectionCard:hover path {
   stroke: #006b6a;
-}
-.portifolioSectionHeading {
-  color: var(--heading-color);
-  padding-top: 35%;
 }
 
 .testimonialDivSection {
@@ -712,27 +627,6 @@ select {
   .textTerms:hover {
     color: var(--github);
   }
-    /*  */
-  
-  @media only screen and (max-width: 1600px) {
-    .skillsSectionContainer {
-      gap: 16px;
-    }
-    .skillsSectionCard {
-      gap: 28px;
-    }
-    .skillsSectionCardContent {
-      gap: 20px;
-    }
-    .skillsSectionCardTitle {
-      font-size: 23px;
-      line-height: 30px;
-    }
-    .skillsSectionCardDescription {
-      font-size: 17px;
-      line-height: 27px;
-    }
-  }
   
   @media only screen and (max-width: 1200px) {
     .heroSection {
@@ -745,24 +639,13 @@ select {
     .footerContent {
       text-align: center;
     }
-    .skillsSectionContainer,
     .portfolioSectionContainer,
-    .portfolioContainer-box,
     .footerLinkContainer,
     .footerItems > ul,
     .footerContentContainer {
       display: flex;
       flex-direction: column;
     }
-    .skillsSection,
-    .portfolioContainer,
-    .heroSectionContent {
-      align-items: center;
-    }
-    .portfolioContainer-box {
-      gap: 30px;
-    }
-    .skillsSection,
     .testimonialDivSection,
     .contactSection,
     .footerContainer {
@@ -802,18 +685,30 @@ select {
       justify-content: space-around;
       align-items: center;
     }
-    .portfolioSection, .profile-container {  /* global section margin*/
+    .portfolioSection,          /* global section margin*/
+    .profile-container {  
       position: relative;
       margin: 0 10%;
       height: calc(100vh - 60px); 
       overflow: hidden;
     }
-    .about-section {
+   .skills-container {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    position: relative;
+    margin: 0 10%;
+   }  
+   .about-section {
       width: 80%;
       text-align: center;
     }
   }
- 
+  @media (max-width: 800px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
   @media screen and (max-width: 800px) {
     
     .navHumburger {
