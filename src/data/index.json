@@ -24,6 +24,44 @@
     "progress": 85
   }
 ],
+  "projects": [
+    {
+      "name": "Country App",
+      "description": "World countries info app",
+      "image": "../img/port1.png",
+      "url": "https://example.com/project1"
+    },
+    {
+      "name": "Calculator app",
+      "description": "Another cool project.",
+      "image": "../img/port2.png",
+      "url": "https://example.com/project2"
+    },
+    {
+      "name": "Country App",
+      "description": "World countries information app",
+      "image": "../img/port3.png",
+      "url": "https://example.com/project1"
+    },
+    {
+      "name": "Employee management web",
+      "description": "Another cool project for designet.",
+      "image": "img/project4.png",
+      "url": "https://example.com/project2"
+    },
+    {
+      "name": "Country App",
+      "description": "World countries info app",
+      "image": "../img/port5.png",
+      "url": "https://example.com/project1"
+    },
+    {
+      "name": "Landing page",
+      "description": "Another cool project.",
+      "image": "../img/port6.png",
+      "url": "https://niyikiza20.github.io/landing-page/"
+    }
+  ],
     "portfolio": [
       {
         "id": "1",
