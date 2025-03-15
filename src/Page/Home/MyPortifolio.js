@@ -3,15 +3,15 @@ import projectData from "../../data/index.json"
 
 
 export default function MyPortfolio() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    setProjects(projectData.projects || []);
-  }, []);
+    const [projects, setProjects] = useState([]);
+  
+    useEffect(() => {
+      setProjects(projectData.projects || []);
+    }, []);
 
   return (
     <section className="portfolio-section">
-      <div className="portfolio-title">
+      <div className="portfolio-main-title">
         <h1>Portfolio</h1>
       </div>
       <div className="portfolio-header">
@@ -25,20 +25,22 @@ export default function MyPortfolio() {
           projects.map((project, index) => (
             <div key={index} className="portfolio-card">
               <img
-                src={`/img/${project.image}`} // Ensure your images are in the public/img/ folder
+                src={`/img/${project.image}`} 
                 alt={project.name}
                 className="portfolio-image"
               />
               <h3 className="portfolio-title">{project.name}</h3>
-              <p className="portfolio-text">{project.description}</p>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="portfolio-button"
-              >
-                View
-              </a>
+              <div className="portfolio-text-container"> 
+                <p className="portfolio-text">{project.description}</p>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-button"
+                >
+                  View
+                </a>
+              </div>
             </div>
           ))
         )}
