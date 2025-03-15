@@ -29,39 +29,40 @@
       "name": "Country App",
       "description": "World countries info app",
       "image": "../img/port1.png",
-      "url": "https://example.com/project1"
-    },
-    {
-      "name": "Calculator app",
-      "description": "Another cool project.",
-      "image": "../img/port2.png",
-      "url": "https://example.com/project2"
-    },
-    {
-      "name": "Country App",
-      "description": "World countries information app",
-      "image": "../img/port3.png",
-      "url": "https://example.com/project1"
+      "url": "https://niyikiza20.github.io/country/"
     },
     {
       "name": "Employee management web",
       "description": "Company employee registering system.",
-      "image": "img/port4.png",
-      "url": "https://example.com/project2"
-    },
-    {
-      "name": "Country App",
-      "description": "World countries info app",
-      "image": "../img/port5.png",
-      "url": "https://example.com/project1"
+      "image": "../img/port2.png",
+      "url": "https://niyikiza-ems.onrender.com/"
     },
     {
       "name": "Landing page",
       "description": "Another cool project.",
-      "image": "../img/port6.png",
+      "image": "../img/port3.png",
       "url": "https://niyikiza20.github.io/landing-page/"
+    },
+    {
+      "name": "Admin Dashboard",
+      "description": "An exemplar business dashboard",
+      "image": "../img/port4.png",
+      "url": "http://niyikiza20.github.io/adminDashboard/"
+    },
+    {
+      "name": "Weather App",
+      "description": "Tracking weather parameters ",
+      "image": "../img/port5.png",
+      "url": "https://niyikiza20.github.io/weather/"
+    },
+    
+    {
+      "name": "ETch-a-Sketch",
+      "description": "Drawing app",
+      "image": "../img/port6.png",
+      "url": "https://niyikiza20.github.io/best-sketch/"
     }
-  ],
+ ],
     "portfolio": [
       {
         "id": "1",

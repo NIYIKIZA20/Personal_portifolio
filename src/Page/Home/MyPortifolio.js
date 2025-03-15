@@ -10,7 +10,7 @@ export default function MyPortfolio() {
     }, []);
 
   return (
-    <section className="portfolio-section">
+    <section className="portfolio-section" id="MyPortfolio"> 
       <div className="portfolio-main-title">
         <h1>Portfolio</h1>
       </div>

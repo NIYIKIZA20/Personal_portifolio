@@ -355,6 +355,132 @@ li {
   color: white;
 }
                             /* My Portfolio Starts */
+                            .portfolio-section {
+                              padding: 24px;
+                              text-align: center;
+                            }
+                            
+                            .portfolio-main-title {
+                              font-size: 2rem;
+                              font-weight: bold;
+                              margin-bottom: 16px;
+                              text-align: center;
+                            }
+                            
+                            .portfolio-header {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              flex-wrap: wrap;
+                              gap: 10px;
+                              margin-bottom: 16px;
+                            }
+                            
+                            .portfolio-description {
+                              font-size: 1rem;
+                              font-weight: 500;
+                            }
+                            
+                            .github-button {
+                              background: #e5e7eb;
+                              padding: 5px 10px;
+                              font-weight: bold;
+                              border-radius: 8px;
+                              cursor: pointer;
+                            }
+                            
+                            .portfolio-grid {
+                              display: flex;
+                              flex-wrap: wrap;
+                              justify-content: center;
+                              gap: 10px;
+                              max-width: 800px;
+                              margin: 0 auto;
+                            }
+                            
+                            .portfolio-card {
+                              width: 30%;
+                              max-width: 240px;
+                              min-height: 220px; /* Further reduced height */
+                              background: #f3f4f6;
+                              padding: 10px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: space-between;
+                              align-items: center;
+                              transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+                            
+                            .portfolio-card:hover {
+                              transform: scale(1.05);
+                              box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                            }
+                            
+                            .portfolio-grid:hover .portfolio-card:not(:hover) {
+                              transform: scale(0.95);
+                            }
+                            
+                            .portfolio-image {
+                              width: 100%;
+                              height: auto;
+                              aspect-ratio: 1 / 1;
+                              object-fit: cover;
+                              border-radius: 6px;
+                              margin-bottom: 4px; /* Reduced space below image */
+                            }
+                            
+                            .portfolio-text {
+                              font-size: 0.9rem;
+                              color: #4b5563;
+                              text-align: center;
+                              margin-bottom: 2px; /* Reduced space below title */
+                            }
+                            
+                            .portfolio-footer {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              margin-top: 2px; /* Reduced space above button */
+                            }
+                            
+                            .portfolio-button {
+                              display: inline-block;
+                              padding: 6px 8px;
+                              background: #3b82f6;
+                              color: white;
+                              border-radius: 5px;
+                              text-decoration: none;
+                              text-align: center;
+                              font-size: 0.8rem;
+                              align-self: center;
+                            }
+                            
+                            
+                            @media (max-width: 800px) {
+                              .portfolio-card {
+                                width: 45%; 
+                              }
+                            }
+                            
+                            @media (max-width: 550px) {
+                              .portfolio-header {
+                                flex-direction: column;
+                                text-align: center;
+                              }
+                              .portfolio-grid {
+                                flex-direction: column;
+                                align-items: center;
+                              }
+                              .portfolio-card {
+                                width: 90%; /* 1 card per row on small screens */
+                              }
+                            }
+
+  
+
+
 .portfolioSection {
   display: flex;
   padding: 50px 85px;
