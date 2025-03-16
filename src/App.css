@@ -401,7 +401,7 @@ li {
                             .portfolio-card {
                               width: 30%;
                               max-width: 240px;
-                              min-height: 220px; /* Further reduced height */
+                              min-height: 220px;
                               background: #f3f4f6;
                               padding: 10px;
                               border-radius: 10px;
@@ -428,14 +428,19 @@ li {
                               aspect-ratio: 1 / 1;
                               object-fit: cover;
                               border-radius: 6px;
-                              margin-bottom: 4px; /* Reduced space below image */
+                              margin-bottom: 4px;
+                              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
                             }
                             
                             .portfolio-text {
                               font-size: 0.9rem;
                               color: #4b5563;
                               text-align: center;
-                              margin-bottom: 2px; /* Reduced space below title */
+                              flex-grow: 1;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              margin-bottom: 4px;
                             }
                             
                             .portfolio-footer {
@@ -446,8 +451,9 @@ li {
                             }
                             
                             .portfolio-button {
-                              display: inline-block;
-                              padding: 6px 8px;
+                              display:block;
+                              padding: 5px 20px;
+                              width:100% ;
                               background: #3b82f6;
                               color: white;
                               border-radius: 5px;
