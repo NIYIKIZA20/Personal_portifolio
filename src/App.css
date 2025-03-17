@@ -356,7 +356,6 @@ li {
 }
                             /* My Portfolio Starts */
                             .portfolio-section {
-                              padding: 24px;
                               text-align: center;
                             }
                             
@@ -382,20 +381,25 @@ li {
                             }
                             
                             .github-button {
-                              background: #e5e7eb;
+                              background-color: var(--darkblue);
                               padding: 5px 10px;
                               font-weight: bold;
                               border-radius: 8px;
                               cursor: pointer;
+                              color: var(--white);
+  
                             }
+                            .github-button:hover
+                            {
+                            background-color: var(--bg-shade);
+                            color: var(--black);
+                            } 
                             
                             .portfolio-grid {
                               display: flex;
                               flex-wrap: wrap;
                               justify-content: center;
-                              gap: 10px;
-                              max-width: 800px;
-                              margin: 0 auto;
+                              gap: 25p;
                             }
                             
                             .portfolio-card {
@@ -452,7 +456,7 @@ li {
                             
                             .portfolio-button {
                               display:block;
-                              padding: 5px 20px;
+                              padding: 5px 2px;
                               width:100% ;
                               background: #3b82f6;
                               color: white;
@@ -487,85 +491,8 @@ li {
   
 
 
-.portfolioSection {
-  display: flex;
-  padding: 50px 85px;
-  box-shadow: 150px 2px 150px 2px rgba(0, 0, 0, 0.15);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-}
 
-.portfolioSectionContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 42.6px;
-  width: 100%;
-}
-.portfolioSectionImg {
-  border-radius: 8px;
-  width: 100%;
-  cursor: pointer;
-}
-.portfolioSectionImg > img {
-  width: 100%;
-}
-.portifolioContainerCard{
-  display: flex;
-  height: 100%;
-}
-.portfolioSectionCard {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-  background: #fff;
-  height:100%;
-  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-}
 
-.portfolioSectionCardContent {
-  display: flex;
-  padding: 32px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.portfolioSectionTitle {
-  color: var(--heading-color);
-}
-.portfolioLink {
-
-  display: flex;
-  align-self:auto;
-  gap: 30%;
-  align-items: center;  
-}
-.liveDemoBtn {
-  display: flex;
-  white-space: nowrap;
-  background-color: var(--primary);
-  color: var(--white);
-  cursor: pointer;
-  border-radius: 4px;
-}
-.githubLinkBtn {
-  cursor: pointer;
-  background-color: var(--darkblue);
-  color: var(--white);
-  border-radius: 4px;
-}
-.githubLinkBtn:hover,
-.liveDemoBtn:hover{
-  background-color: var(--bg-shade);
-  color: var(--black);
-}  
-.portfolioSectionCard:hover path {
-  stroke: #006b6a;
-}
 
 .testimonialDivSection {
   display: flex;
@@ -771,7 +698,6 @@ select {
     .footerContent {
       text-align: center;
     }
-    .portfolioSectionContainer,
     .footerLinkContainer,
     .footerItems > ul,
     .footerContentContainer {
@@ -817,14 +743,14 @@ select {
       justify-content: space-around;
       align-items: center;
     }
-    .portfolioSection,          /* global section margin*/
+                            /* global section margin*/
     .profile-container {  
       position: relative;
       margin: 0 10%;
       height: calc(100vh - 60px); 
       overflow: hidden;
     }
-   .skills-container {
+   .skills-container, .portfolio-section {
     width: 80%;
     margin:auto;
     text-align: center;
