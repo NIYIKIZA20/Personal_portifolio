@@ -543,55 +543,7 @@ li {
 
 
  
-/* 
-.testimonialDivSection {
-  display: flex;
-  padding: 50px 84px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-}
-.sectionsHeading {
-  color: var(--heading-color);
-}
-.testimonialDivSectionCard {
-  display: flex;
-  padding: 42.6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 42.6px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1px solid #006b6a;
-}
-.testimonialDivSectionCardReviews {
-  display: flex;
-  align-items: flex-start;
-  gap: 5.33px;
-}
-.testimonialDivSectionCardReviewAuthorDetail {
-  display: flex;
-  align-items: center;
-  gap: 21.3px;
-}
-.testimonialDivAuthorName {
-  font-weight: 600;
-  color: var(--heading-color);
-}
-.testimonialDivAuthorDesignation {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
-.testimonialImage {
-  width:77px;
-  height:77px;
-  max-width: 100px;
-  max-height: 100px;
-  border-radius: 50% 50%;
-   
-}  */
+
 .contactSection {
   display: flex;
   padding: 40px 85px;
