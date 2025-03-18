@@ -3,11 +3,10 @@ import data from "../../data/index.json";
 export default function Testimonial() {
   return (
     <section className="testimonialDivSection" id="testimonial">
-      <div className="portfolioContainer-box">
-        <div className="portfolioContainer">
-          <h2 className="sectionsHeading">Customer feedback</h2>
-        </div>
+      <div className="portfolioContainer">
+        <h2 className="sectionsHeading">Customer feedback</h2>
       </div>
+      
       <div className="portfolioSectionContainer">
         {data?.testimonial?.map((item, index) => (
           

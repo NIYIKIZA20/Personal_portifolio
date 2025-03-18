@@ -355,11 +355,16 @@ li {
   color: white;
 }
                             /* My Portfolio Starts */
-                            .portfolio-section {
+                            .portfolio-section,
+                            .testimonialDivSection {
                               text-align: center;
+                              width: 90%;
+                              max-width: 1200px;
+                              margin: auto;
                             }
                             
-                            .portfolio-main-title {
+                            .portfolio-main-title,
+                            .portfolioContainer {
                               font-size: 2rem;
                               font-weight: bold;
                               margin-bottom: 16px;
@@ -371,7 +376,7 @@ li {
                               justify-content: center;
                               align-items: center;
                               flex-wrap: wrap;
-                              gap: 10px;
+                              gap: 20px;
                               margin-bottom: 16px;
                             }
                             
@@ -387,25 +392,25 @@ li {
                               border-radius: 8px;
                               cursor: pointer;
                               color: var(--white);
-  
+                              margin-left: auto;
                             }
-                            .github-button:hover
-                            {
-                            background-color: var(--bg-shade);
-                            color: var(--black);
-                            } 
                             
-                            .portfolio-grid {
-                              display: flex;
-                              flex-wrap: wrap;
+                            .github-button:hover {
+                              background-color: var(--bg-shade);
+                              color: var(--black);
+                            }
+                            
+                            .portfolio-grid, 
+                            .portfolioSectionContainer {
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                              gap: 20px;
                               justify-content: center;
-                              gap: 25p;
                             }
                             
                             .portfolio-card {
-                              width: 30%;
-                              max-width: 240px;
-                              min-height: 220px;
+                              max-width: 300px;
+                              min-height: 240px;
                               background: #f3f4f6;
                               padding: 10px;
                               border-radius: 10px;
@@ -433,7 +438,7 @@ li {
                               object-fit: cover;
                               border-radius: 6px;
                               margin-bottom: 4px;
-                              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                             }
                             
                             .portfolio-text {
@@ -451,27 +456,28 @@ li {
                               display: flex;
                               justify-content: center;
                               align-items: center;
-                              margin-top: 2px; /* Reduced space above button */
+                              margin-top: 2px;
+                              width: 100%;
                             }
                             
                             .portfolio-button {
-                              display:block;
-                              padding: 5px 2px;
-                              width:100% ;
+                              display: block;
+                              padding: 5px 10px;
+                              width: 100%;
                               background: #3b82f6;
                               color: white;
                               border-radius: 5px;
                               text-decoration: none;
                               text-align: center;
                               font-size: 0.8rem;
-                              align-self: center;
                             }
                             
-                            
                             @media (max-width: 800px) {
-                              .portfolio-card {
-                                width: 45%; 
-                              }
+                              .portfolio-card,
+                              .testimonialDivSectionCard {
+                                width: 45%;
+                              };
+                              
                             }
                             
                             @media (max-width: 550px) {
@@ -480,20 +486,64 @@ li {
                                 text-align: center;
                               }
                               .portfolio-grid {
-                                flex-direction: column;
+                                grid-template-columns: 1fr;
                                 align-items: center;
                               }
                               .portfolio-card {
-                                width: 90%; /* 1 card per row on small screens */
+                                width: 90%;
                               }
+                              .testimonialDivSectionCard {
+                                width: 100%;
+                              }
+                            }
+  
+                          
+
+
+
+                            .testimonialDivSectionCard {
+                              background: #fff;
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                              gap: 10px;
+                              max-width: 300px; 
+                              transition: background-color 0.3s ease;
+                            }
+                            
+                            .testimonialDivSectionCard:hover {
+                              background-color: #f1f1ff;
+                            }
+                            
+                            .testimonialDivSectionCardReview {
+                              display: flex;
+                              gap: 5px;
+                            }
+                            
+                            .textName {
+                              font-size: 1rem;
+                              color: #4b5563;
+                              text-align: center;
+                            }
+                            
+                            .testimonialDivSectionCardReviewAuthorDetail {
+                              display: flex;
+                              align-items: center;
+                              gap: 10px;
+                            }
+                            
+                            .testimonialImage {
+                              width: 50px;
+                              height: 50px;
+                              border-radius: 50%;
                             }
 
   
 
 
 
-
-
+ 
+/* 
 .testimonialDivSection {
   display: flex;
   padding: 50px 84px;
@@ -540,8 +590,8 @@ li {
   max-width: 100px;
   max-height: 100px;
   border-radius: 50% 50%;
-  
-}
+   
+}  */
 .contactSection {
   display: flex;
   padding: 40px 85px;
@@ -738,13 +788,13 @@ select {
   }
 
   @media (min-width: 800px) {
-    .profile-content {
+    .profile-content{
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
     }
                             /* global section margin*/
-    .profile-container {  
+    .profile-container{  
       position: relative;
       margin: 0 10%;
       height: calc(100vh - 60px); 
