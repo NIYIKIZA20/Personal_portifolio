@@ -752,13 +752,16 @@ select {
       height: calc(100vh - 60px); 
       overflow: hidden;
     }
-   .skills-container, .portfolio-section {
+   .skills-container,
+    .portfolio-section, 
+    .testimonialDivSection {
     width: 80%;
     margin:auto;
     text-align: center;
     position: relative;
     margin: 0 10%;
-   }  
+   }
+   
    .about-section {
       width: 80%;
       text-align: center;
