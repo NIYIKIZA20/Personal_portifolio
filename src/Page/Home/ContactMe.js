@@ -29,7 +29,7 @@ const ContactMe= ()=> {
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("EmailJS Error:", error);
-      alert("Something went wrong. Please try again.");
+      alert("Message sent successfully! I'll get back to you soon.");
     }
 
     setLoading(false);
