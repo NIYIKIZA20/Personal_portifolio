@@ -559,6 +559,9 @@ li {
                               }
                               
                               .contact-form {
+                                width: 50%; 
+                                max-width: 600px; 
+                                margin: auto;
                                 display: flex;
                                 flex-direction: column;
                                 gap: 15px;
@@ -581,7 +584,7 @@ li {
                               }
                               
                               .contact-textarea {
-                                height: 120px;
+                                height: 80px;
                                 resize: none;
                               }
                               
