@@ -1,82 +1,11 @@
-import { Link } from "react-scroll";
 import React from "react";
 
 function Footer() {
   return (
-    <footer className="footerContainer">
-      <div className="footerLinkContainer">
-        <div>
-          <img src="./img/logo.png" alt="Logo" />
-        </div>
-        <div className="footerItems">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="heroSection"
-                className="textName"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="profile-content"
-                className="textName"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="AboutMe"
-                className="textName"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="textName"
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="testimonial"
-                className="textName"
-              >
-                Testimonials
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <footer >
+      <hr className="divider" />
+      <div className="footerContentContainer">
+        <p className="footerContent"> Copyright &copy; {new Date().getFullYear()} Jean Baptiste NIYIKIZA. All rights reserved.</p>
         <div className="footerSocialIcon">
           <ul>
             <li>
@@ -166,53 +95,6 @@ function Footer() {
                   />
                 </svg>
               </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr className="divider" />
-      <div className="footerContentContainer">
-      <p className="footerContent"> Copyright &copy; {new Date().getFullYear()} Jean Baptiste NIYIKIZA. All rights reserved.</p>
-        <div className="footerSocialIcon">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="PrivacyPolicy"
-                className="textTerms"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="TermsOfService"
-                className="textTerms"
-              >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbarActiveContent"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="CookiesSettings"
-                className="textTerms"
-              >
-                Cookies Settings
-              </Link>
             </li>
           </ul>
         </div>
