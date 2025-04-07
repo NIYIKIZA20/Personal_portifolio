@@ -226,7 +226,11 @@ body.dark {
   overflow-x: hidden;
   
 }
-.profile-title, .skills-title {
+.profile-title,
+ .skills-title,
+ .contact-title,
+ .portfolio-main-title,
+ .sectionsHeading {
   font-size: 2.5rem;
   color: #6a1b9a;
 }
