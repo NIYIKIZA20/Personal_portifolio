@@ -682,13 +682,56 @@ select {
 }
                                              /*footer styles*/
   
-  /* .footerLinkContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-  } */
-  .footerSocialIcon > ul {
+   /* footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+  
+    .divider {
+      border: none;
+      border-top: 1px solid #444;
+      margin-bottom: 20px;
+    }
+  
+    .footerContentContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .footerContent {
+      font-size: 14px;
+      margin: 0;
+    }
+  
+    .footerSocialIcon ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .footerSocialIcon li {
+      display: inline-block;
+    }
+  
+    .icon {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: brightness(0) invert(1);
+      
+    }
+  
+    .icon:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    } */
+   .footerSocialIcon > ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -701,7 +744,6 @@ select {
     color: var(--github);
   }
   .divider {
-    /* margin: 106px 0 42.67px; */
     height: 1.5px;
     width: 100%;
     background: var(--divider);
@@ -709,21 +751,22 @@ select {
   .footerContentContainer {
     display: flex;
     justify-content: space-between;
+    background: #282938;
     align-items: center;
     align-self: stretch;
   }
   .footerContent {
-    color: var(--darkblue);
+    color: var(--white);
     font-size: 16px;
     font-weight: bold;
     line-height: 28px;
   
   }
   .footerContent:hover {
-    color: var(--heading-color);
+    color: var(--primary);
     font-weight: bold;
   }
-  .contactMe {
+  /* .contactMe {
     color: var(--darkblue);
     font-size: 18px;
     font-style: normal;
@@ -736,7 +779,7 @@ select {
     font-style: normal;
     font-weight: 200;
     line-height: 24px;
-  }
+  }  */
   @media only screen and (max-width: 1200px) {
     .heroSection {
       display: flex;
@@ -748,10 +791,10 @@ select {
     .footerContent {
       text-align: center;
     }
-    .footerContentContainer {
+    /* .footerContentContainer {
       display: flex;
       flex-direction: column;
-    }
+    } */
     .testimonialDivSection,
     .contactSection {
       gap: 20px;
