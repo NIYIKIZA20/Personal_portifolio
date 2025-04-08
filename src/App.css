@@ -8,24 +8,27 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
-  /* background-color: var(--body-color); */
+  /* background-color: var(--bg-primary); */
   
 }
 :root {
-  --primary: #5e3bee;
-  --heading-color: #282938;
-  --bg-shade: #f5fcff;
+  --primary: #3505f3;
+  --bg-primary: #3e11f4;
   --github: #e62872;
+  --white: #ffffff;
+  --bg-shade: #f5fcff;
+
+  --heading-color: #282938;
   --darkblue: #1c1e53;
   --black: hwb(0 0% 100%);
   --body-color:rgba(0,0,0,.98);
-  --white: #ffffff;
   --divider : rgba(40, 41, 56, 0.6);
   }
 body.dark {
   --primary: #281e4e;
+
   --heading-color: #e6f2f4;
-  --bg-shade: #f5fcff0d;
+  --bg-shade: #052220;
   --github: #e62872;
   --darkblue: #ffffff;
   --black: #ffffff;
@@ -77,14 +80,14 @@ body.dark {
   align-items: center;
   height: 40px;
   padding: 15px 20px;
-  background: var(--bg-shade);
+  background: var(--bg-primary);
   position: fixed;
   max-width: 1400px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  gap: 15px; 
+  gap: 25px; 
 }
 .myNavbar {
   margin-right: auto;
@@ -93,12 +96,10 @@ body.dark {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 15px; 
+  gap: 25px; 
   text-decoration: none;
 }
-.navbarItems ul > li > a {
-  text-decoration: none;
-}
+
 .myNavbar > img {
   height: 40px; 
   width: 40px; 
@@ -115,22 +116,25 @@ body.dark {
   border-radius: 50%;
 }                            
 .navbarContent {
-  color: var(--darkblue);
-  font-size: 16px;
+  color: var(--white);
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   cursor: pointer;
 }
-.navbarContent:hover {
+.navbarContent:hover, 
+.navbarActiveContent{
   color: var(--github);
 }
-.navbarActiveContent {
-  color: var(--primary);
-}
+
 .download-cv {
   padding: 4px 8px;
   border-radius: 20px;
+  background: var(--bg-shade);
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: bold;
 }
                   /* NavHumburger styles*/
 .navHumburger {        
@@ -589,18 +593,17 @@ li {
   flex-shrink: 0;
   text-decoration: none;
 }
-.footerSocialIcon > ul:hover {
-  color: var(--github);
-}
 .divider {
   height: 1.5px;
   width: 100%;
-  background: var(--divider);
+  background: #282938;
+  margin: 2px 0;
 }
 .footerContentContainer {
   display: flex;
   justify-content: space-between;
   background: #282938;
+  padding: 0 15px;
   align-items: center;
   align-self: stretch;
 }

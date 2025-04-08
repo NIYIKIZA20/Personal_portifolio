@@ -116,20 +116,23 @@ function Navbar() {
               Skills
             </Link>
           </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbarActiveContent"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Contact"
+              className="navbarContent "
+            >
+              Contact Me
+            </Link>
+          </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbarActiveContent"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="navbarContent "
-      >
-        Contact Me
-      </Link>
+      
       <div>
         <button className="btn btn-primary download-cv" onClick={openFile}>Download CV</button>
       </div>
