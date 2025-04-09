@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
-  /* background-color: var(--bg-primary); */
+  background-color: var(--bg-shade);
   
 }
 :root {
@@ -100,12 +100,12 @@ body.dark {
   text-decoration: none;
 }
 
-/* .myNavbar > img {
+.myNavbar > img {
   height: 40px; 
   width: 40px; 
   border-radius: 20px;
-} */
-.myNavbar>img,
+}
+
 .dark > img {
   height: 15px; 
   width: 15px; 
@@ -227,7 +227,7 @@ body.dark {
 .profile-container {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--bg-shade);
   overflow-x: hidden;
   
 }
@@ -305,6 +305,8 @@ body.dark {
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  padding: 20px;
+  background: var(--bg-shade);
 }
 .skills-subtitle {
   color: #007bff;
@@ -364,12 +366,22 @@ li {
   color: white;
 }
                           /* My Portfolio Starts */
-.portfolio-section,
+.portfolio-section {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background: var(--bg-shade);
+  padding: 20px;
+}
+
 .testimonialDivSection {
   text-align: center;
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  padding: 20px;
+  background: var(--bg-shade);
 }
 
 .portfolio-main-title,
@@ -519,7 +531,11 @@ li {
   border-radius: 50%;
 }
                       /*contact section*/
-.contact-section {
+.contact-container {
+background: var(--bg-shade);
+padding: 20px;
+}
+ .contact-section {
   width: 90%;
   max-width: 800px;
   margin: auto;
@@ -636,7 +652,8 @@ li {
   }
   .skills-container,
   .portfolio-section, 
-  .testimonialDivSection {
+  .testimonialDivSection,
+  .contact-container {
     width: 80%;
     margin:auto;
     text-align: center;
