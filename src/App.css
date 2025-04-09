@@ -25,7 +25,7 @@ body {
   --divider : rgba(40, 41, 56, 0.6);
   }
 body.dark {
-  --primary: #281e4e;
+  --primary: #ffffff;
 
   --heading-color: #e6f2f4;
   --bg-shade: #052220;
@@ -50,8 +50,8 @@ body.dark {
 }
 .btn-primary {
   color: var(--white);
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--bg-primary);
   
 }
 .btn-primary:hover {
@@ -100,11 +100,12 @@ body.dark {
   text-decoration: none;
 }
 
-.myNavbar > img {
+/* .myNavbar > img {
   height: 40px; 
   width: 40px; 
   border-radius: 20px;
-}
+} */
+.myNavbar>img,
 .dark > img {
   height: 15px; 
   width: 15px; 
