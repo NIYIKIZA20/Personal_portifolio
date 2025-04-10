@@ -117,7 +117,7 @@ body.dark {
 }                            
 .navbarContent {
   color: var(--white);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -133,7 +133,7 @@ body.dark {
   border-radius: 20px;
   background: var(--bg-shade);
   color: var(--primary);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
                   /* NavHumburger styles*/
@@ -228,6 +228,7 @@ body.dark {
   padding: 20px;
   background-color: var(--bg-shade);
   overflow-x: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   
 }
 .profile-title,
@@ -306,6 +307,7 @@ body.dark {
   text-align: center;
   padding: 20px;
   background: var(--bg-shade);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 .skills-subtitle {
   color: #007bff;
@@ -372,6 +374,7 @@ li {
   margin: auto;
   background: var(--bg-shade);
   padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .testimonialDivSection {
@@ -381,6 +384,7 @@ li {
   margin: auto;
   padding: 20px;
   background: var(--bg-shade);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-main-title,
@@ -533,6 +537,7 @@ li {
 .contact-container {
 background: var(--bg-shade);
 padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
  .contact-section {
   width: 90%;
