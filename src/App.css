@@ -26,7 +26,6 @@ body {
   }
 body.dark {
   --primary: #ffffff;
-
   --heading-color: #e6f2f4;
   --bg-shade: #052220;
   --github: #e62872;
@@ -35,7 +34,7 @@ body.dark {
   --white: hwb(0 0% 1002%);
   --divider : rgba(200, 200,195,0.6);
 }          
-       /*button styles*/
+               /*button styles*/
 .btn {
   font-family: "Roboto";
   display: inline-block;
