@@ -1,7 +1,7 @@
 export default function AboutMe() {
 
   const handleFollow = () => {
-    const fileUrl = "https://www.linkedin.com/in/niyikiza-jean-baptiste/";
+    const fileUrl = "https://www.linkedin.com/in/niyikiza-jean-baptiste-887b2b35b/";
     window.open(fileUrl, '_blank');
   }
     return (

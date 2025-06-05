@@ -42,7 +42,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/niyikiza-jean-baptiste/"
+                href="https://www.linkedin.com/in/niyikiza-jean-baptiste-887b2b35b/"
                 className="navbarContent"
                 target="_blank"
                 rel="noreferrer"
