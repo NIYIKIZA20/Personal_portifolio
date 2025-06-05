@@ -20,7 +20,13 @@
   {
     "category": "Embedded Systems",
     "credential": "Self taught.",
-    "skills": ["Microcontroller programming", "PCB designs", "CAD design", "Signal analysis & Simulations","IoT solutions," ,"Python", "C & C++"],
+    "skills": ["Microcontroller programming", "PCB designs", "CAD design", "Signal analysis & Simulations","IoT solutions" ,"Python", "C & C++"],
+    "progress": 85
+  },
+  {
+    "category": "Reseacher",
+    "credential": "Accademic background.",
+    "skills": ["Literature Review", "Data Analysis", "Research Methodology", "Problem-Solving","Statistical Analysis" ,"Python", "C & C++"],
     "progress": 85
   }
 ],
